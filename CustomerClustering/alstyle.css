@@ -1,0 +1,171 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  /* 한글 폰트 설정 */
+  line-height: 1.5;
+  /* 줄 간격 설정 */
+}
+
+/* 헤더 스타일 */
+header {
+  background-color: #2E2E2E;
+  color: #fff;
+  padding: 23px 0;
+  text-align: center;
+  /* 헤더 텍스트를 가운데 정렬 */
+}
+
+.container {
+  display: grid;
+  margin-left: 5%;
+  grid-template-columns: 25% 30% 30%;
+  grid-template-rows: 100px 300px 300px ;
+  margin-top: -70px;
+}
+
+
+/* 로그인 폼 스타일 */
+.login-box {
+  grid-row: 2;
+  width: 80%;
+  border:solid #ccc;
+  border-radius: 13px;
+  text-align: center;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.login-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+}
+
+
+/* 캘린더 스타일 */
+#calendar {
+  grid-row: 3;
+  width: 80%;
+  margin-top: 20px;
+  border: 0px solid #ccc;
+  border-radius: 13px;
+  text-align: center;
+}
+
+/* 메인칸 스타일 */
+#intro {
+  grid-row: 2 / 5;
+  grid-column: 2 / 4;
+  margin-left: 20px;
+  width: 100%;
+  height: 700px;
+  border: 1px solid #ccc;
+  border-radius: 13px;
+  text-align: center;
+}
+
+#avg {
+  grid-row: 2 / 5;
+  grid-column: 2 / 4;
+  margin-left: 20px;
+  width: 100%;
+  height: 2840px;
+  border: 1px solid #ccc;
+  border-radius: 13px;
+  text-align: center;
+  
+}
+
+
+#process {
+  grid-row: 2 / 5;
+  grid-column: 2 / 4;
+  margin-left: 20px;
+  width: 100%;
+  height: 1500px;
+  border: 1px solid #ccc;
+  border-radius: 13px;
+  text-align: center;
+}
+
+.overlap {
+  position: fixed;
+  margin-top: 100px;
+  border-radius: 13px;
+  right: 5px;
+  width: 12%;
+  height: 300px;
+}
+
+.nav1,
+.nav2,
+.nav3{
+  border: 1px solid;
+  text-align: center;
+  height: 15%;
+  font-size: 120%;
+}
+
+.text-wrapper-1:hover,
+.text-wrapper-2:hover,
+.text-wrapper-3:hover {
+  cursor: pointer;
+}
+
+/* 캘린더 컨테이너 스타일 */
+#calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; 
+}
+
+/* 달력 테이블 스타일 */
+#calendar table {
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  width: 100%; 
+}
+
+#calendar table th,
+#calendar table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#calendar table th {
+  background-color: #f2f2f2;
+}
+
+#calendar table td {
+  cursor: progress;
+}
+
+#calendar table td:hover {
+  background-color: #f2f2f2;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2E2E2E;
+  color: #fff;
+}
